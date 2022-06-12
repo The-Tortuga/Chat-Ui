@@ -1,0 +1,99 @@
+local CMDS = Instance.new("ScreenGui")
+
+local CMDSFRAME = Instance.new("Frame")
+
+local ScrollingFrame = Instance.new("ScrollingFrame")
+
+local TextLabel = Instance.new("TextLabel")
+
+local closegui = Instance.new("TextButton")
+
+CMDS.Name = "CMDS"
+
+CMDS.Parent = game:GetService("CoreGui")
+
+CMDSFRAME.Name = "CMDSFRAME"
+
+CMDSFRAME.Parent = CMDS
+
+CMDSFRAME.Active = true
+
+CMDSFRAME.BackgroundColor3 = Color3.new(0.223529, 0.231373, 0.309804)
+
+CMDSFRAME.BorderSizePixel = 0
+
+CMDSFRAME.Draggable = true
+
+CMDSFRAME.Position = UDim2.new(0, 315, 0, 100)
+
+CMDSFRAME.Size = UDim2.new(0, 275, 0, 275)
+
+CMDSFRAME.Visible = false
+
+ScrollingFrame.Parent = CMDSFRAME
+
+ScrollingFrame.BackgroundColor3 = Color3.new(0.160784, 0.160784, 0.203922)
+
+ScrollingFrame.BorderSizePixel = 0
+
+ScrollingFrame.Position = UDim2.new(0, 0, 0.0729999989, 0)
+
+ScrollingFrame.Size = UDim2.new(1.04999995, 0, 0.92900002, 0)
+
+ScrollingFrame.CanvasSize = UDim2.new(0, 0, 10, 0)
+
+TextLabel.Parent = ScrollingFrame
+
+TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+
+TextLabel.BackgroundTransparency = 1
+
+TextLabel.Size = UDim2.new(0.930000007, 0, 1, 0)
+
+TextLabel.Font = Enum.Font.SourceSans
+
+TextLabel.FontSize = Enum.FontSize.Size18
+
+TextLabel.Text = "[-] This is cmds from Tortuga the creator of ADMIN script.\n[1] :fly --Its a fly gui and it can Increase or Decrease the speed.\n[2] :shiftlock --Opens shiftlock for mobile with a button.\n[3] :invis --Makes you invisible and opens a keyboard to press E on mobile.\n[4] :keybaord --Opens keyboard on mobile.\n[5] :servers --Shows servers with player count, job-id and ping.\n[6] :hitbox --You can reach a person from so far away.\n[7] :translate --It can automatically translates every thing at chat, just type >(language shortened).\n[8] :aimbot --It locks the camera to nearest person.\n[9] :esp --Shows players place, healt bar and how far away from you.\n[10] :logs --Shows what players chatted even the channels and whistles.\n[11] :tptool --Equip and click to tp.\n[-------------------------------------------------------------] \n[-] Special Commands.\n[1] :deathnote --Opens a note book that kills people when you write their name.\n[-------------------------------------------------------------] \n[-] Gui&Ui Commands.\n[1] /reviz --Reviz Admin Ui.\n[2] /pineapple --A radio gui."
+
+TextLabel.TextColor3 = Color3.new(1, 1, 1)
+
+TextLabel.TextSize = 15
+
+TextLabel.TextWrapped = true
+
+TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+TextLabel.TextYAlignment = Enum.TextYAlignment.Top
+
+closegui.Name = "closegui"
+
+closegui.Parent = CMDSFRAME
+
+closegui.BackgroundColor3 = Color3.new(0.890196, 0.223529, 0.0588235)
+
+closegui.BorderSizePixel = 0
+
+closegui.Position = UDim2.new(0.995000005, 0, 0, 0)
+
+closegui.Size = UDim2.new(0.0545952693, 0, 0.0728644878, 0)
+
+closegui.Font = Enum.Font.SourceSansBold
+
+closegui.FontSize = Enum.FontSize.Size24
+
+closegui.Text = "X"
+
+closegui.TextColor3 = Color3.new(1, 1, 1)
+
+closegui.TextSize = 20
+
+closegui.MouseButton1Click:connect(function()
+
+	CMDSFRAME.Visible = falseend)
+
+CMDSFRAME.Visible = true 
+
+    end
+
+end)
